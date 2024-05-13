@@ -16,7 +16,7 @@ export default function Header() {
           LOGO
         </Link>
       </Button>
-      <ul className="flex gap-4">
+      <ul className="flex gap-8">
         {navItems.map((item) => (
           <li key={item.label}>
             <Button asChild variant="ghost">
@@ -24,8 +24,8 @@ export default function Header() {
             </Button>
           </li>
         ))}
-        <ModeToggle />
       </ul>
+      <ModeToggle />
     </header>
   );
 }
