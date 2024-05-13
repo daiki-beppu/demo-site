@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
+import { ModeToggle } from "./mood-toggle";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -23,6 +24,7 @@ export default function Header() {
             </Button>
           </li>
         ))}
+        <ModeToggle />
       </ul>
     </header>
   );
