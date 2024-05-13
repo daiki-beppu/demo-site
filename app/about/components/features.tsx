@@ -12,5 +12,3 @@ export default function Features() {
     </Section>
   );
 }
-
-// 躓いたところ Linkのインポート先を間違えていてカード全体がリンクにならなかった next/linkをインポートする！
