@@ -9,7 +9,10 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "demo-site",
+  title: {
+    template: "%s | demo-site",
+    default: "demo-site",
+  },
   description: "Learn Next.js",
 };
 
