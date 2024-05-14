@@ -10,13 +10,14 @@ const navItems = [
 
 export default function Header() {
   return (
-    <header className="container h-16 flex items-center border-b justify-between">
+    <header className="container h-16 flex items-center border-b">
       <Button variant="ghost" asChild>
         <Link href={"/"} className="font-bold">
           LOGO
         </Link>
       </Button>
-      <ul className="flex gap-8">
+      <span className="flex-1"></span>
+      <ul className="flex gap-4">
         {navItems.map((item) => (
           <li key={item.label}>
             <Button asChild variant="ghost">
@@ -25,6 +26,7 @@ export default function Header() {
           </li>
         ))}
       </ul>
+      <span className="flex-1"></span>
       <ModeToggle />
     </header>
   );
