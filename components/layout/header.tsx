@@ -25,9 +25,9 @@ export default function Header() {
             </Button>
           </li>
         ))}
+        <span className="flex-1"></span>
+        <ModeToggle />
       </ul>
-      <span className="flex-1"></span>
-      <ModeToggle />
     </header>
   );
 }
