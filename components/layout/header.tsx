@@ -17,7 +17,7 @@ export default function Header() {
         </Link>
       </Button>
       <span className="flex-1"></span>
-      <ul className="flex gap-4">
+      <ul className="flex">
         {navItems.map((item) => (
           <li key={item.label}>
             <Button asChild variant="ghost">
@@ -25,9 +25,9 @@ export default function Header() {
             </Button>
           </li>
         ))}
-        <span className="flex-1"></span>
-        <ModeToggle />
       </ul>
+      <span className="flex-1"></span>
+      <ModeToggle />
     </header>
   );
 }
