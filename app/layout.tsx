@@ -16,12 +16,12 @@ export const metadata: Metadata = {
   },
   description: "Learn Next.js",
   openGraph: {
-    title: "タイトル",
-    description: "説明",
+    title: "demo-site",
+    description: "learn-Next.js",
   },
   twitter: {
-    title: "タイトル",
-    description: "説明",
+    title: "demo-site",
+    description: "learn-Next.js",
     card: "summary_large_image",
   },
 };
