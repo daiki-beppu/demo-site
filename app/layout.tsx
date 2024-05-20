@@ -9,11 +9,21 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://demo-site-smoky-six.vercel.app/"),
   title: {
     template: "%s | demo-site",
     default: "demo-site",
   },
   description: "Learn Next.js",
+  openGraph: {
+    title: "タイトル",
+    description: "説明",
+  },
+  twitter: {
+    title: "タイトル",
+    description: "説明",
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({
