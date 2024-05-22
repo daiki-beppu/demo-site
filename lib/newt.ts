@@ -19,6 +19,7 @@ export const getArticles = cache(async () => {
         "title",
         "slug",
         "body",
+        "coverImage",
         "_sys.createdAt",
         "_sys.updatedAt",
       ],
