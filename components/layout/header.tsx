@@ -11,10 +11,8 @@ const navItems = [
 export default function Header() {
   return (
     <header className="container h-16 flex items-center border-b">
-      <Button variant="ghost" asChild>
-        <Link href={"/"} className="font-bold">
-          LOGO
-        </Link>
+      <Button variant="ghost" asChild className="font-bold">
+        <Link href={"/"}>Blog</Link>
       </Button>
       <span className="flex-1"></span>
       <ul className="flex">

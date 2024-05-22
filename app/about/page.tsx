@@ -1,6 +1,6 @@
 import { Metadata } from "next";
-import Features from "./components/features";
-import Hero from "./components/hero";
+import Hero from "../components/hero";
+import { Contents } from "../components/contents";
 
 export const metadata: Metadata = {
   title: "サービス紹介",
@@ -9,9 +9,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div>
-      <Hero />
-      <Features />
+    <div className="container py-10">
+      <Contents />
     </div>
   );
 }

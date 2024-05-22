@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import Section from "./section";
 import { Mail } from "lucide-react";
+import Section from "./section";
 
 export default function Contact() {
   return (
