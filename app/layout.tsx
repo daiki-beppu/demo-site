@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import { ThemeProvider } from "@/components/ui/theme-provider";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,6 +43,7 @@ export default function RootLayout({
         >
           <Header />
           {children}
+          <Analytics />
           <Footer />
         </ThemeProvider>
       </body>
