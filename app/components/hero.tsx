@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-
 export default function Hero() {
   return (
     <div className="py-40 flex fl font-bold items-center">
