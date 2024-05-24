@@ -27,6 +27,11 @@ export async function Contents() {
                     <span className="absolute inset-0"></span>
                   </Link>
                 </h3>
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: article.body.substring(3, 100) + "...",
+                  }}
+                />
                 <time className="pt-4 text-sm text-muted-foreground flex items-center justify-end gap-2 mt-auto">
                   <RotateCw size={14} />
                   最終更新日:
